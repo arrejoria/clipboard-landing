@@ -1,0 +1,171 @@
+
+// ## Layout
+// The designs were created to the following widths:
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Icons
+// - [Font Awesome](https://fontawesome.com)
+// - [IcoMoon](https://icomoon.io)
+// - [Ionicons](https://ionicons.com)
+
+// Fonts
+@import url("https://fonts.bunny.net/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+// Variables
+@import "variables";
+
+// ## App Styles start from here
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../../public/images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    color: $dark-grayish-blue;
+    font-size: $font-size;
+    font-family: $font-family-baiJamjuree;
+}
+
+p {
+    color: $grayish-blue;
+}
+
+section {
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: $weight-secondary;
+}
+//### Main Section Styles
+
+.main__container {
+    // margin-top: 10vh;
+    // padding: 10vh 0;
+
+    .main__text__content {
+        &:nth-child(1) {
+            margin-bottom: 140px;
+        }
+
+        .main__title {
+            font-weight: $weight-secondary;
+        }
+        .main__description {
+            padding: 1rem 2.4rem;
+        }
+        .main__buttons {
+            button {
+                border: none;
+                border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+                border-radius: 2rem;
+                color: #fff;
+                padding: 0.5rem 2rem;
+
+                &:nth-child(1) {
+                    background-color: $strong-cyan;
+                    box-shadow: 0 2px 10px $strong-cyan,
+                        -11px -11px 10px #fdfdfd;
+                }
+                &:nth-child(2) {
+                    background-color: $light-blue;
+                    box-shadow: 0 2px 10px $light-blue, -11px -11px 10px #fdfdfd;
+                }
+            }
+        }
+    }
+}
+
+//### Hero Section Styles
+
+.hero__container {
+    .hero__content {
+        gap: 100px;
+        .hero__image__content {
+            img {
+                object-fit: contain;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .hero__text__content {
+            gap: 2.5rem;
+            padding: 3rem;
+            .hero__text-item {
+                h2 {
+                }
+                p {
+                }
+            }
+        }
+    }
+}
+//### Access Section Styles
+.access__container {
+    gap: 60px;
+
+    .access__image__content {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+//### Workflow Section Styles
+.workflow__container {
+    gap: 5rem;
+    .workflow__text__content {
+        gap: 1rem;
+    }
+
+    .workflow__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        .workflow__item {
+            display: grid;
+            grid-template-rows: 80px 50px 1fr;
+            padding: 0 20px;
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            max-height: 200px;
+            .workflow__item-image {
+                width: 100%;
+                max-height: 50px;
+            }
+            h3 {
+                font-size: 24px;
+            }
+
+        }
+    }
+}
+
+// Media Queries
+
+@media (min-width: 1440px) {
+    // // main Section
+    // .main__image__content {
+    //     img {
+    //         max-width: 10rem;
+    //     }
+    // }
+    // //Hero Section
+    // .hero__image__content {
+    //     img {
+    //         max-width: 50rem;
+    //     }
+    // }
+}

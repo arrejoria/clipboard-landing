@@ -1,0 +1,223 @@
+@import url("https://fonts.bunny.net/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-image: url("/assets/images/bg-header-desktop.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: hsl(210deg, 10%, 33%);
+  font-size: 18px;
+  font-family: "Bai Jamjuree";
+}
+@media (max-width: 375px) {
+  body {
+    background-size: auto;
+  }
+}
+
+p {
+  color: hsl(201deg, 11%, 66%);
+}
+
+main,
+section,
+footer {
+  margin-bottom: 70px;
+  padding-top: 100px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+.download__container {
+  gap: 2.5rem;
+}
+.download__container .download__text__content {
+  gap: 1.5rem;
+  line-height: 1.5;
+}
+.download__container .download__text__content .download__title {
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+.download__container .download__text__content .download__description {
+  padding: 0 1.5rem;
+  margin-bottom: 2rem;
+}
+.download__container .download__text__content .download__buttons button {
+  border: none;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2rem;
+  color: #fff;
+  padding: 0.7rem 2rem;
+}
+.download__container .download__text__content .download__buttons button:nth-child(1) {
+  background-color: hsl(171deg, 66%, 44%);
+  box-shadow: 0 2px 10px hsl(171deg, 66%, 44%), -11px -11px 10px #fdfdfd;
+}
+.download__container .download__text__content .download__buttons button:nth-child(2) {
+  background-color: hsl(233deg, 100%, 69%);
+  box-shadow: 0 2px 10px hsl(233deg, 100%, 69%), -11px -11px 10px #fdfdfd;
+}
+.download__container .download__text__content .download__buttons button:active {
+  filter: brightness(110%);
+}
+@media (max-width: 375px) {
+  .download__container .download__text__content .download__buttons button {
+    width: 100%;
+    max-width: 80vw;
+  }
+}
+
+.hero__container {
+  gap: 4rem;
+}
+.hero__container .hero__text__content {
+  line-height: 1.5;
+}
+.hero__container .hero__content {
+  gap: 5rem;
+}
+.hero__container .hero__content .hero__image__content img {
+  width: 100%;
+  max-width: 752px;
+  height: auto;
+}
+.hero__container .hero__content .hero__text__content {
+  gap: 2.5rem;
+  padding: 1.5rem;
+}
+.hero__container .hero__content .hero__text__content .hero__text-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  line-height: 1.5;
+}
+.hero__container .hero__content .hero__text__content .hero__text-item h3 {
+  font-size: 26px;
+}
+@media (max-width: 375px) {
+  .hero__container .hero__content .hero__text__content {
+    text-align: center;
+  }
+}
+
+.access__container {
+  gap: 60px;
+}
+.access__container .access__text__content {
+  line-height: 1.5;
+}
+
+.workflow__container {
+  gap: 5rem;
+  margin-bottom: 100px;
+}
+.workflow__container .workflow__text__content {
+  gap: 1rem;
+}
+.workflow__container .workflow__items .workflow__item {
+  padding: 0 2rem;
+}
+.workflow__container .workflow__items .workflow__item h3 {
+  font-size: 24px;
+}
+.workflow__container .workflow__items .workflow__item p {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.clients__container {
+  margin-bottom: 100px;
+}
+.clients__container .clients__swiper .swiper-slide {
+  align-self: center;
+  text-align: center;
+}
+.clients__container .swiper {
+  width: 80vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 780px) {
+  .clients__container .swiper {
+    height: 100%;
+    min-height: 400px;
+  }
+}
+
+.footer__container {
+  background-color: #f5f6f8;
+  width: 100%;
+  height: auto;
+}
+.footer__container .footer__content {
+  display: flex;
+  gap: 2.5rem;
+  margin: 0 auto;
+  width: 100%;
+}
+.footer__container .footer__content .menu__section {
+  gap: 1.5rem;
+}
+.footer__container .footer__content .menu__section .menu__items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footer__container .footer__content .menu__section .menu__items .menu__item :is(:hover) {
+  color: hsl(171deg, 66%, 44%);
+}
+.footer__container .footer__content .menu__section .menu__items .menu__item a {
+  color: hsl(210deg, 10%, 33%);
+  text-decoration: none;
+}
+.footer__container .footer__content .social__section .social__items .social__item .social__icon[data-icon=icon-facebook]::before {
+  background-image: url("/assets/images/icon-facebook.svg");
+}
+.footer__container .footer__content .social__section .social__items .social__item .social__icon[data-icon=icon-twitter]::before {
+  background-image: url("/assets/images/icon-twitter.svg");
+}
+.footer__container .footer__content .social__section .social__items .social__item .social__icon[data-icon=icon-instagram]::before {
+  background-image: url("/assets/images/icon-instagram.svg");
+}
+.footer__container .footer__content .social__section .social__items .social__item .social__icon:hover {
+  filter: hue-rotate(295deg) brightness(2) contrast(1) saturate(5);
+}
+.footer__container .footer__content .social__section .social__items .social__item .social__icon::before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0.2rem;
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 1440px) {
+  .download__image__content img {
+    max-width: 10rem;
+  }
+  .hero__content {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
