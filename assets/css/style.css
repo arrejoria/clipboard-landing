@@ -71,6 +71,10 @@ h2 {
   color: #fff;
   padding: 0.7rem 2rem;
 }
+.download__container .download__text__content .download__buttons button a {
+  text-decoration: none;
+  color: #fff;
+}
 .download__container .download__text__content .download__buttons button:nth-child(1) {
   background-color: hsl(171deg, 66%, 44%);
   box-shadow: 1px 5px 16px -3px hsl(171deg, 66%, 44%), -11px -11px 10px #fdfdfd, inset 0px -3px 2px 0px hsla(171deg, 46%, 34%, 0.4), -11px -11px 10px #fdfdfd;
