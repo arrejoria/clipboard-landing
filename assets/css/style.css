@@ -65,33 +65,31 @@ h2 {
 .download__container .download__text__content .download__buttons {
   padding: 1rem 0;
 }
-.download__container .download__text__content .download__buttons button {
+.download__container .download__text__content .download__buttons a {
   border: none;
   border-radius: 2rem;
   color: #fff;
   padding: 0.7rem 2rem;
-}
-.download__container .download__text__content .download__buttons button a {
+  outline: none;
   text-decoration: none;
-  color: #fff;
 }
-.download__container .download__text__content .download__buttons button:nth-child(1) {
+.download__container .download__text__content .download__buttons a:nth-child(1) {
   background-color: hsl(171deg, 66%, 44%);
   box-shadow: 1px 5px 16px -3px hsl(171deg, 66%, 44%), -11px -11px 10px #fdfdfd, inset 0px -3px 2px 0px hsla(171deg, 46%, 34%, 0.4), -11px -11px 10px #fdfdfd;
 }
-.download__container .download__text__content .download__buttons button:nth-child(2) {
+.download__container .download__text__content .download__buttons a:nth-child(2) {
   background-color: hsl(233deg, 100%, 69%);
   box-shadow: 1px 5px 16px -3px hsl(233deg, 100%, 69%), -11px -11px 10px #fdfdfd, inset 0px -3px 2px 0px hsla(233deg, 46%, 34%, 0.4), -11px -11px 10px #fdfdfd;
 }
-.download__container .download__text__content .download__buttons button:hover {
+.download__container .download__text__content .download__buttons a:hover {
   filter: brightness(110%);
 }
-.download__container .download__text__content .download__buttons button:active {
+.download__container .download__text__content .download__buttons a:active {
   transform: translateY(5px) scale(0.95);
   box-shadow: unset;
 }
 @media (max-width: 740px) {
-  .download__container .download__text__content .download__buttons button {
+  .download__container .download__text__content .download__buttons a {
     width: 100%;
     max-width: 80vw;
   }

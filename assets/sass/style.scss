@@ -81,16 +81,13 @@ h2 {
     .download__buttons {
       padding: 1rem 0;
 
-      button {
-        a {
-          text-decoration: none;
-          color: #fff;
-        }
-
+      a {
         border: none;
         border-radius: 2rem;
         color: #fff;
         padding: 0.7rem 2rem;
+        outline: none;
+        text-decoration: none;
 
         &:nth-child(1) {
           background-color: $strong-cyan;
