@@ -118,6 +118,7 @@ h2 {
   }
 
   .hero__content {
+    justify-content: start  ;
     gap: 5rem;
     .hero__image__content {
       img {
@@ -282,7 +283,7 @@ h2 {
 
 // Media Queries
 
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   // Body Background
 
   // Download Section
@@ -292,9 +293,13 @@ h2 {
     }
   }
   //Hero Section
-  .hero__content {
-    justify-content: center;
-    .hero__image__content {
+  .hero__container {
+
+    .hero__content {
+        justify-content: center;
+        width: auto;
     }
+
+    
   }
 }

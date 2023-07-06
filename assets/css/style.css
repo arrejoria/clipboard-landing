@@ -97,6 +97,7 @@ h2 {
   line-height: 1.5;
 }
 .hero__container .hero__content {
+  justify-content: start;
   gap: 5rem;
 }
 .hero__container .hero__content .hero__image__content img {
@@ -216,12 +217,13 @@ h2 {
   height: 24px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .download__image__content img {
     max-width: 10rem;
   }
-  .hero__content {
+  .hero__container .hero__content {
     justify-content: center;
+    width: auto;
   }
 }
 
