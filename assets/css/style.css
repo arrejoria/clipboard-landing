@@ -67,21 +67,24 @@ h2 {
 }
 .download__container .download__text__content .download__buttons button {
   border: none;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-radius: 2rem;
   color: #fff;
   padding: 0.7rem 2rem;
 }
 .download__container .download__text__content .download__buttons button:nth-child(1) {
   background-color: hsl(171deg, 66%, 44%);
-  box-shadow: 0 2px 10px hsl(171deg, 66%, 44%), -11px -11px 10px #fdfdfd;
+  box-shadow: 1px 5px 16px -3px hsl(171deg, 66%, 44%), -11px -11px 10px #fdfdfd, inset 0px -3px 2px 0px hsla(171deg, 46%, 34%, 0.4), -11px -11px 10px #fdfdfd;
 }
 .download__container .download__text__content .download__buttons button:nth-child(2) {
   background-color: hsl(233deg, 100%, 69%);
-  box-shadow: 0 2px 10px hsl(233deg, 100%, 69%), -11px -11px 10px #fdfdfd;
+  box-shadow: 1px 5px 16px -3px hsl(233deg, 100%, 69%), -11px -11px 10px #fdfdfd, inset 0px -3px 2px 0px hsla(233deg, 46%, 34%, 0.4), -11px -11px 10px #fdfdfd;
+}
+.download__container .download__text__content .download__buttons button:hover {
+  filter: brightness(110%);
 }
 .download__container .download__text__content .download__buttons button:active {
-  filter: brightness(110%);
+  transform: translateY(5px) scale(0.95);
+  box-shadow: unset;
 }
 @media (max-width: 740px) {
   .download__container .download__text__content .download__buttons button {
@@ -118,7 +121,7 @@ h2 {
 .hero__container .hero__content .hero__text__content .hero__text-item h3 {
   font-size: 26px;
 }
-@media (max-width: 375px) {
+@media (max-width: 760px) {
   .hero__container .hero__content .hero__text__content {
     text-align: center;
   }
@@ -162,7 +165,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
-@media (max-width: 780px) {
+@media (max-width: 760px) {
   .clients__container .swiper {
     height: 100%;
     min-height: 400px;
