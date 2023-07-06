@@ -17,6 +17,7 @@ body {
   color: hsl(210deg, 10%, 33%);
   font-size: 18px;
   font-family: "Bai Jamjuree";
+  overflow-x: hidden;
 }
 @media (max-width: 375px) {
   body {
@@ -33,6 +34,7 @@ section,
 footer {
   margin-bottom: 70px;
   padding-top: 100px;
+  overflow-x: hidden;
 }
 
 h1,
@@ -58,7 +60,10 @@ h2 {
 }
 .download__container .download__text__content .download__description {
   padding: 0 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+.download__container .download__text__content .download__buttons {
+  padding: 1rem 0;
 }
 .download__container .download__text__content .download__buttons button {
   border: none;
