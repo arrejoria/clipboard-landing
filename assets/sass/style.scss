@@ -72,7 +72,7 @@ h2 {
     line-height: 1.5;
     .download__title {
       font-weight: $weight-secondary;
-      font-size: 2.2rem;
+      font-size: 2.1rem;
     }
     .download__description {
       padding: 0 1.5rem;
@@ -80,6 +80,7 @@ h2 {
     }
     .download__buttons {
         padding: 1rem 0;
+
       button {
         border: none;
         border-bottom: 3px solid rgba(0, 0, 0, 0.2);
@@ -100,7 +101,7 @@ h2 {
           filter: brightness(110%);
         }
 
-        @media (max-width: 375px) {
+        @media (max-width: 740px) {
           width: 100%;
           max-width: 80vw;
         }

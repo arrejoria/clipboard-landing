@@ -56,7 +56,7 @@ h2 {
 }
 .download__container .download__text__content .download__title {
   font-weight: 600;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
 }
 .download__container .download__text__content .download__description {
   padding: 0 1.5rem;
@@ -83,7 +83,7 @@ h2 {
 .download__container .download__text__content .download__buttons button:active {
   filter: brightness(110%);
 }
-@media (max-width: 375px) {
+@media (max-width: 740px) {
   .download__container .download__text__content .download__buttons button {
     width: 100%;
     max-width: 80vw;
