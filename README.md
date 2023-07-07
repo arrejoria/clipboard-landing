@@ -33,8 +33,8 @@ In fact, I need to clean up the html code a bit in this layout, but I need to co
 
 ### Screenshot
 
-![Desktop](./screenshot-desktop.jpg)
-![Mobile](./screenshot-mobile.jpg)
+![Desktop](./screenshot-desktop.webp)
+![Mobile](./screenshot-mobile.webp)
 
 ### Links
 
